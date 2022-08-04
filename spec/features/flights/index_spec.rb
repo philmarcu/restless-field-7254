@@ -148,18 +148,42 @@ RSpec.describe 'flight index page' do
         expect(page).to_not have_content("Aabria Iyenger")
       end
     end
+
+    it 'wont delete the same passenger from a different flight' do
+      air_1 = Airline.create!(name: "American")
+
+      flight_1 = air_1.flights.create!(number: "7990", date: "2/7/2022", departure_city: "Glendale", arrival_city: "Dallas" )
+      flight_2 = air_1.flights.create!(number: "3940", date: "3/10/2022", departure_city: "Detroit", arrival_city: "Orlando" )
+
+      pass_1 = Passenger.create!(name: "Brennan Lee Mulligan", age: 33)
+      pass_2 = Passenger.create!(name: "Misty Moore", age: 44)
+      pass_3 = Passenger.create!(name: "Danny Moore", age: 15)
+      pass_4 = Passenger.create!(name: "Barry-Drewman Man", age: 25)
+      pass_5 = Passenger.create!(name: "Bill Seacaster", age: 46)
+
+      fli_pas1 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_1.id)
+      fli_pas2 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_2.id)
+      fli_pas3 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_3.id)
+      fli_pas4 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_4.id)
+      fli_pas5 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_5.id)   
+
+      fli_pas5 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_1.id)    
+      fli_pas5 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_4.id)    
+
+      visit flights_path
+
+      within "#flight-#{flight_1.id}" do
+        click_on "Delete Brennan Lee Mulligan"
+        click_on "Barry-Drewman Man"
+
+        expect(page).to_not have_content("Brennan Lee Mulligan")
+        expect(page).to_not have_content("Barry-Drewman Man")
+      end   
+      
+      within "#flight-#{flight_2.id}" do
+        expect(page).to have_content("Brennan Lee Mulligan")
+        expect(page).to have_content("Barry-Drewman Man")
+      end
+    end
   end
 end
-
-
-# User Story 2, Remove a Passenger from a Flight
-
-# As a visitor
-# When I visit the flights index page
-# Next to each passengers name
-# I see a link or button to remove that passenger from that flight
-# When I click on that link/button
-# I'm returned to the flights index page
-# And I no longer see that passenger listed under that flight
-
-# (Note: you should not destroy the passenger record entirely)
