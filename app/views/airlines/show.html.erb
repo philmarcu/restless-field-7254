@@ -1,6 +1,8 @@
 <h1><%= @airline.name %> Current Passengers</h1>
-<% @airline.passengers.unique.each do |pass| %>
-  <% if pass.age >= 18 %>
-    <p><%= pass.name %> - Age <%= pass.age %></p>
-  <% end %>
+<% @airline.adult_passengers.each do |pass| %>
+  <div id="pass-<%= pass.id %>">
+    <% if pass.age >= 18 %>
+      <p><%= pass.name %> - Age <%= pass.age %></p>
+    <% end %>
+  </div>
 <% end %>
