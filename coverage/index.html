@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-08-04T15:04:49-06:00">2022-08-04T15:04:49-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-08-04T15:58:07-06:00">2022-08-04T15:58:07-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.15
+         1.16
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>250</b> relevant lines,
-    <span class="green"><b>250</b> lines covered</span> and
+    <b>252</b> relevant lines,
+    <span class="green"><b>252</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -77,7 +77,7 @@
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.33</td>
             
           </tr>
         
@@ -132,7 +132,7 @@
             <td class="cell--number">6</td>
             <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.17</td>
+            <td class="cell--number">1.33</td>
             
           </tr>
         
@@ -337,9 +337,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#06beaa9509a34c06818d444fe6e6f2dd62ce4aa2" class="src_link" title="spec/features/flights/index_spec.rb">spec/features/flights/index_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">189</td>
-            <td class="cell--number">130</td>
-            <td class="cell--number">130</td>
+            <td class="cell--number">191</td>
+            <td class="cell--number">132</td>
+            <td class="cell--number">132</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -455,8 +455,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="3">
+            <span class="hits">2</span>
             
 
             
@@ -896,8 +896,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="7">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="3" data-linenumber="7">
+            <span class="hits">3</span>
             
 
             
@@ -1257,7 +1257,7 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3859,8 +3859,8 @@
     
 
     <div class="t-line-summary">
-      <b>130</b> relevant lines.
-      <span class="green"><b>130</b> lines covered</span> and
+      <b>132</b> relevant lines.
+      <span class="green"><b>132</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -4978,7 +4978,7 @@
 
             
 
-            <code class="ruby">      fli_pas4 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_5.id)</code>
+            <code class="ruby">      fli_pas5 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_5.id)</code>
           </li>
         </div>
       
@@ -5033,7 +5033,7 @@
 
             
 
-            <code class="ruby">        expect(page).to have_content(&quot;Delete Brennan Lee Mulligan&quot;)</code>
+            <code class="ruby">        expect(page).to have_selector(:link_or_button, &quot;Delete Brennan Lee Mulligan&quot;)</code>
           </li>
         </div>
       
@@ -5044,7 +5044,7 @@
 
             
 
-            <code class="ruby">        expect(page).to have_content(&quot;Delete Misty Moore&quot;)</code>
+            <code class="ruby">        expect(page).to have_selector(:link_or_button, &quot;Delete Misty Moore&quot;)</code>
           </li>
         </div>
       
@@ -5055,29 +5055,29 @@
 
             
 
-            <code class="ruby">        expect(page).to have_content(&quot;Delete Bill Seacaster&quot;)</code>
+            <code class="ruby">        expect(page).to have_selector(:link_or_button, &quot;Delete Bill Seacaster&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="109">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="109">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      end</code>
+            
+
+            <code class="ruby">        expect(page).to_not have_selector(:link_or_button, &quot;Kingston Brown&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="110">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="110">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">        expect(page).to_not have_selector(:link_or_button, &quot;Aabria Iyengar&quot;)</code>
           </li>
         </div>
       
@@ -5088,29 +5088,29 @@
 
             
 
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="112">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="113">
+            
+            
+
+            
+
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="112">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;can delete a passenger from a flight &amp; keep them in d/b&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="113">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      air_1 = Airline.create!(name: &quot;American&quot;)</code>
           </li>
         </div>
       
@@ -5121,18 +5121,18 @@
 
             
 
-            <code class="ruby">      air_2 = Airline.create!(name: &quot;United&quot;)</code>
+            <code class="ruby">    it &#39;can delete a passenger from a flight &amp; keep them in d/b&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="115">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="115">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      air_1 = Airline.create!(name: &quot;American&quot;)</code>
           </li>
         </div>
       
@@ -5143,29 +5143,29 @@
 
             
 
-            <code class="ruby">      flight_1 = air_1.flights.create!(number: &quot;7990&quot;, date: &quot;2/7/2022&quot;, departure_city: &quot;Glendale&quot;, arrival_city: &quot;Dallas&quot; )</code>
+            <code class="ruby">      air_2 = Airline.create!(name: &quot;United&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="117">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      flight_2 = air_1.flights.create!(number: &quot;3940&quot;, date: &quot;3/10/2022&quot;, departure_city: &quot;Detroit&quot;, arrival_city: &quot;Orlando&quot; )</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="118">
+          <li class="never" data-hits="" data-linenumber="117">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="118">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      flight_1 = air_1.flights.create!(number: &quot;7990&quot;, date: &quot;2/7/2022&quot;, departure_city: &quot;Glendale&quot;, arrival_city: &quot;Dallas&quot; )</code>
           </li>
         </div>
       
@@ -5176,18 +5176,18 @@
 
             
 
-            <code class="ruby">      pass_1 = Passenger.create!(name: &quot;Brennan Lee Mulligan&quot;, age: 33)</code>
+            <code class="ruby">      flight_2 = air_1.flights.create!(number: &quot;3940&quot;, date: &quot;3/10/2022&quot;, departure_city: &quot;Detroit&quot;, arrival_city: &quot;Orlando&quot; )</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="120">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="120">
+            
             
 
             
 
-            <code class="ruby">      pass_2 = Passenger.create!(name: &quot;Misty Moore&quot;, age: 44)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -5198,7 +5198,7 @@
 
             
 
-            <code class="ruby">      pass_3 = Passenger.create!(name: &quot;Bill Seacaster&quot;, age: 46)</code>
+            <code class="ruby">      pass_1 = Passenger.create!(name: &quot;Brennan Lee Mulligan&quot;, age: 33)</code>
           </li>
         </div>
       
@@ -5209,7 +5209,7 @@
 
             
 
-            <code class="ruby">      pass_4 = Passenger.create!(name: &quot;Kingston Brown&quot;, age: 84)</code>
+            <code class="ruby">      pass_2 = Passenger.create!(name: &quot;Misty Moore&quot;, age: 44)</code>
           </li>
         </div>
       
@@ -5220,18 +5220,18 @@
 
             
 
-            <code class="ruby">      pass_5 = Passenger.create!(name: &quot;Aabria Iyengar&quot;, age: 9)</code>
+            <code class="ruby">      pass_3 = Passenger.create!(name: &quot;Bill Seacaster&quot;, age: 46)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="124">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="124">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      pass_4 = Passenger.create!(name: &quot;Kingston Brown&quot;, age: 84)</code>
           </li>
         </div>
       
@@ -5242,18 +5242,18 @@
 
             
 
-            <code class="ruby">      fli_pas1 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_1.id)</code>
+            <code class="ruby">      pass_5 = Passenger.create!(name: &quot;Aabria Iyengar&quot;, age: 9)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="126">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="126">
+            
             
 
             
 
-            <code class="ruby">      fli_pas2 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_2.id)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -5264,18 +5264,18 @@
 
             
 
-            <code class="ruby">      fli_pas3 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_3.id)</code>
+            <code class="ruby">      fli_pas1 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_1.id)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="128">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="128">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      fli_pas2 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_2.id)</code>
           </li>
         </div>
       
@@ -5286,23 +5286,12 @@
 
             
 
-            <code class="ruby">      fli_pas4 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_4.id)</code>
+            <code class="ruby">      fli_pas3 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_3.id)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="130">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      fli_pas4 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_5.id)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="131">
+          <li class="never" data-hits="" data-linenumber="130">
             
             
 
@@ -5313,13 +5302,24 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="131">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      fli_pas4 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_4.id)</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="132">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      visit flights_path</code>
+            <code class="ruby">      fli_pas4 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_5.id)</code>
           </li>
         </div>
       
@@ -5341,29 +5341,29 @@
 
             
 
-            <code class="ruby">      within &quot;#flight-#{flight_1.id}&quot; do</code>
+            <code class="ruby">      visit flights_path</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="135">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        click_on &quot;Delete Brennan Lee Mulligan&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="136">
+          <li class="never" data-hits="" data-linenumber="135">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="136">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      within &quot;#flight-#{flight_1.id}&quot; do</code>
           </li>
         </div>
       
@@ -5374,18 +5374,18 @@
 
             
 
-            <code class="ruby">        expect(page).to_not have_content(&quot;Brennan Lee Mulligan&quot;)</code>
+            <code class="ruby">        click_on &quot;Delete Brennan Lee Mulligan&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="138">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="138">
+            
             
 
             
 
-            <code class="ruby">        expect(page).to have_content(&quot;Misty Moore&quot;)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -5396,7 +5396,7 @@
 
             
 
-            <code class="ruby">        expect(page).to have_content(&quot;Bill Seacaster&quot;)</code>
+            <code class="ruby">        expect(page).to_not have_content(&quot;Brennan Lee Mulligan&quot;)</code>
           </li>
         </div>
       
@@ -5407,12 +5407,34 @@
 
             
 
+            <code class="ruby">        expect(page).to have_content(&quot;Misty Moore&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="141">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(page).to have_content(&quot;Bill Seacaster&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="142">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">        expect(page).to have_current_path(&quot;/flights&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="141">
+          <li class="never" data-hits="" data-linenumber="143">
             
             
 
@@ -5423,35 +5445,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="142">
+          <li class="never" data-hits="" data-linenumber="144">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="143">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      within &quot;#flight-#{flight_2.id}&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="144">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        click_on &quot;Delete Kingston Brown&quot;</code>
           </li>
         </div>
       
@@ -5462,18 +5462,18 @@
 
             
 
-            <code class="ruby">        click_on &quot;Delete Aabria Iyengar&quot;</code>
+            <code class="ruby">      within &quot;#flight-#{flight_2.id}&quot; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="146">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="146">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">        click_on &quot;Delete Kingston Brown&quot;</code>
           </li>
         </div>
       
@@ -5484,12 +5484,34 @@
 
             
 
+            <code class="ruby">        click_on &quot;Delete Aabria Iyengar&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="148">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="149">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">        expect(page).to_not have_content(&quot;Kingston Brown&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="148">
+          <li class="covered" data-hits="1" data-linenumber="150">
             <span class="hits">1</span>
             
 
@@ -5500,7 +5522,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="149">
+          <li class="never" data-hits="" data-linenumber="151">
             
             
 
@@ -5511,7 +5533,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="150">
+          <li class="never" data-hits="" data-linenumber="152">
             
             
 
@@ -5522,7 +5544,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="151">
+          <li class="never" data-hits="" data-linenumber="153">
             
             
 
@@ -5533,7 +5555,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="152">
+          <li class="covered" data-hits="1" data-linenumber="154">
             <span class="hits">1</span>
             
 
@@ -5544,7 +5566,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="153">
+          <li class="covered" data-hits="1" data-linenumber="155">
             <span class="hits">1</span>
             
 
@@ -5555,7 +5577,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="154">
+          <li class="never" data-hits="" data-linenumber="156">
             
             
 
@@ -5566,7 +5588,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="155">
+          <li class="covered" data-hits="1" data-linenumber="157">
             <span class="hits">1</span>
             
 
@@ -5577,7 +5599,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="156">
+          <li class="covered" data-hits="1" data-linenumber="158">
             <span class="hits">1</span>
             
 
@@ -5588,35 +5610,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="157">
+          <li class="never" data-hits="" data-linenumber="159">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="158">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      pass_1 = Passenger.create!(name: &quot;Brennan Lee Mulligan&quot;, age: 33)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="159">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      pass_2 = Passenger.create!(name: &quot;Misty Moore&quot;, age: 44)</code>
           </li>
         </div>
       
@@ -5627,7 +5627,7 @@
 
             
 
-            <code class="ruby">      pass_3 = Passenger.create!(name: &quot;Danny Moore&quot;, age: 15)</code>
+            <code class="ruby">      pass_1 = Passenger.create!(name: &quot;Brennan Lee Mulligan&quot;, age: 33)</code>
           </li>
         </div>
       
@@ -5638,7 +5638,7 @@
 
             
 
-            <code class="ruby">      pass_4 = Passenger.create!(name: &quot;Barry-Drewman Man&quot;, age: 25)</code>
+            <code class="ruby">      pass_2 = Passenger.create!(name: &quot;Misty Moore&quot;, age: 44)</code>
           </li>
         </div>
       
@@ -5649,18 +5649,18 @@
 
             
 
-            <code class="ruby">      pass_5 = Passenger.create!(name: &quot;Bill Seacaster&quot;, age: 46)</code>
+            <code class="ruby">      pass_3 = Passenger.create!(name: &quot;Danny Moore&quot;, age: 15)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="163">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="163">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      pass_4 = Passenger.create!(name: &quot;Barry-Drewman Man&quot;, age: 25)</code>
           </li>
         </div>
       
@@ -5671,18 +5671,18 @@
 
             
 
-            <code class="ruby">      fli_pas1 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_1.id)</code>
+            <code class="ruby">      pass_5 = Passenger.create!(name: &quot;Bill Seacaster&quot;, age: 46)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="165">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="165">
+            
             
 
             
 
-            <code class="ruby">      fli_pas2 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_2.id)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -5693,7 +5693,7 @@
 
             
 
-            <code class="ruby">      fli_pas3 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_3.id)</code>
+            <code class="ruby">      fli_pas1 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_1.id)</code>
           </li>
         </div>
       
@@ -5704,7 +5704,7 @@
 
             
 
-            <code class="ruby">      fli_pas4 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_4.id)</code>
+            <code class="ruby">      fli_pas2 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_2.id)</code>
           </li>
         </div>
       
@@ -5715,18 +5715,18 @@
 
             
 
-            <code class="ruby">      fli_pas5 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_5.id)   </code>
+            <code class="ruby">      fli_pas3 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_3.id)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="169">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="169">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      fli_pas4 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_4.id)</code>
           </li>
         </div>
       
@@ -5737,23 +5737,12 @@
 
             
 
-            <code class="ruby">      fli_pas5 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_1.id)    </code>
+            <code class="ruby">      fli_pas5 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_5.id)   </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="171">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      fli_pas5 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_4.id)    </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="172">
+          <li class="never" data-hits="" data-linenumber="171">
             
             
 
@@ -5764,13 +5753,24 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="172">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      fli_pas5 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_1.id)    </code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="173">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      visit flights_path</code>
+            <code class="ruby">      fli_pas5 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_4.id)    </code>
           </li>
         </div>
       
@@ -5792,34 +5792,12 @@
 
             
 
-            <code class="ruby">      within &quot;#flight-#{flight_1.id}&quot; do</code>
+            <code class="ruby">      visit flights_path</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="176">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        click_on &quot;Delete Brennan Lee Mulligan&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="177">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        click_on &quot;Barry-Drewman Man&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="178">
+          <li class="never" data-hits="" data-linenumber="176">
             
             
 
@@ -5830,7 +5808,51 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="177">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      within &quot;#flight-#{flight_1.id}&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="178">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        click_on &quot;Delete Brennan Lee Mulligan&quot;</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="179">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        click_on &quot;Barry-Drewman Man&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="180">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="181">
             <span class="hits">1</span>
             
 
@@ -5841,7 +5863,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="180">
+          <li class="covered" data-hits="1" data-linenumber="182">
             <span class="hits">1</span>
             
 
@@ -5852,7 +5874,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="181">
+          <li class="never" data-hits="" data-linenumber="183">
             
             
 
@@ -5863,7 +5885,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="182">
+          <li class="never" data-hits="" data-linenumber="184">
             
             
 
@@ -5874,7 +5896,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="183">
+          <li class="covered" data-hits="1" data-linenumber="185">
             <span class="hits">1</span>
             
 
@@ -5885,7 +5907,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="184">
+          <li class="covered" data-hits="1" data-linenumber="186">
             <span class="hits">1</span>
             
 
@@ -5896,7 +5918,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="185">
+          <li class="covered" data-hits="1" data-linenumber="187">
             <span class="hits">1</span>
             
 
@@ -5907,7 +5929,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="186">
+          <li class="never" data-hits="" data-linenumber="188">
             
             
 
@@ -5918,7 +5940,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="187">
+          <li class="never" data-hits="" data-linenumber="189">
             
             
 
@@ -5929,7 +5951,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="188">
+          <li class="never" data-hits="" data-linenumber="190">
             
             
 
@@ -5940,7 +5962,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="189">
+          <li class="never" data-hits="" data-linenumber="191">
             
             
 

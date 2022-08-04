@@ -98,14 +98,16 @@ RSpec.describe 'flight index page' do
       fli_pas3 = FlightPassenger.create!(flight_id: flight_1.id, passenger_id: pass_3.id)
 
       fli_pas4 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_4.id)
-      fli_pas4 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_5.id)
+      fli_pas5 = FlightPassenger.create!(flight_id: flight_2.id, passenger_id: pass_5.id)
 
       visit flights_path
 
       within "#flight-#{flight_1.id}" do
-        expect(page).to have_content("Delete Brennan Lee Mulligan")
-        expect(page).to have_content("Delete Misty Moore")
-        expect(page).to have_content("Delete Bill Seacaster")
+        expect(page).to have_selector(:link_or_button, "Delete Brennan Lee Mulligan")
+        expect(page).to have_selector(:link_or_button, "Delete Misty Moore")
+        expect(page).to have_selector(:link_or_button, "Delete Bill Seacaster")
+        expect(page).to_not have_selector(:link_or_button, "Kingston Brown")
+        expect(page).to_not have_selector(:link_or_button, "Aabria Iyengar")
       end
     end
 

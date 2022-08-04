@@ -1,12 +1,12 @@
-<h1>All Current Flights in America Land</h1>
+<h1>Flights Index Page</h1>
+
 <% @flights.each do |flight| %>
   <div id="flight-<%= flight.id %>">
-    <b>Flight #: <%= flight.number %></b><br>
-    <p>Airline: <%= flight.airline.name %></p>
+    <b>Flight #: <%= flight.number %>Airline: <%= flight.airline.name %></b><br>
     Passengers -
-    <% flight.passengers.each do |pass| %>
-      <p><%= pass.name %></p>
-      <%= link_to "Delete #{pass.name}", "/flight_passengers/#{flight.id}/#{pass.id}", method: :delete %>
-    <% end %>
+      <% flight.passengers.each do |pass| %>
+        <p><%= pass.name %></p>
+        <%= button_to "Delete #{pass.name}", "/flight_passengers/#{flight.id}/#{pass.id}", method: :delete, local: true %>
+      <% end %>
   </div>
 <% end %>
