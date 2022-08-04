@@ -1,0 +1,11 @@
+<h1>All Current Flights in America Land</h1>
+<% @flights.each do |flight| %>
+  <div id="flight-<%= flight.id %>">
+    <b>Flight #: <%= flight.number %></b><br>
+    <p>Airline: <%= flight.airline.name %></p>
+    Passengers -
+    <% flight.passengers.each do |pass| %>
+      <p><%= pass.name %></p>
+    <% end %>
+  </div>
+<% end %>
